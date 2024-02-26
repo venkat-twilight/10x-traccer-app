@@ -1,0 +1,12 @@
+.toolbar-logo {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.toolbar-icons {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
