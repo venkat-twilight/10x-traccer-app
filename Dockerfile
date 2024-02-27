@@ -1,6 +1,8 @@
-FROM node:14-alpine
+FROM node:18-slim
 
 WORKDIR /app
+
+COPY .npmrc .
 
 COPY package.json .
 
@@ -10,4 +12,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run", "build" ]
